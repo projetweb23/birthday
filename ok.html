@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #030303;
+        }
+        .page {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .page.active {
+            display: flex;
+        }
+        .page1 img {
+            width: 350px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .page1 button {
+            background-color: #ff7a8a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .page1 button:hover {
+            background-color: #fff;
+            color: #ff7a8a;
+        }
+        .page2 img {
+            width: 450px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .page2 .message {
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="page page1 active">
+        <img src="asma.jpg" alt="Birthday Cake">
+        <h1>Happy Birthday!</h1>
+        <button onclick="showPage2()">Click here</button>
+    </div>
+    <div class="page page2">
+        <img src="asmaaa.jpg" alt="Girlfriend's Picture">
+        <div class="message">
+           <h2> <p>fb7al had nhar khalti fouzia wldat lina wa7d snfora flbyd maxi zr9 li xafha kyghr9 kima w9e3 lwa7d khona</p>
+            <p>wakha 9siwra wlkn 9lbha kbir w7nin b7al xi twyr, d7ka lmala2ikiya w3iniha lkhmryin li xfthm fsghr wknxofhm mn jdid</p>
+            <p>mra 7bab mra khot mra mtayfin wlkn fl9lb dima nti l7ob, ntmnaw lik sana mali2a bl afra7 wtwfi9 f ay 7aja baghaha</p>
+            <p>wakha 3arfk atkhli hadxi kaml wtgoli 3lax lkika fiha asma wmaxi asmaa hhhhh</p> </h2>
+
+        </div>
+    </div>
+
+    <script>
+        function showPage2() {
+            document.querySelector('.page1').classList.remove('active');
+            document.querySelector('.page2').classList.add('active');
+        }
+    </script>
+</body>
+</html>
